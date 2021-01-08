@@ -14,7 +14,7 @@ function Cart(props) {
     useEffect(()=>{
         fetchData();
     }, [fetchData]);
-    console.log(cartItems);
+
     return (
         <MainWrapper>
             {loading ? 'Loading' : <CartItems/>}
